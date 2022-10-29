@@ -91,11 +91,11 @@ $(function () {
 	);
 
 	const lineupSwiper = new Swiper('.lineup-slider', {
-		on: {
-			init: function () {
-				lineupPlayers[0].play();
-			},
-		},
+		// on: {
+		// 	init: function () {
+		// 		lineupPlayers[0].play();
+		// 	},
+		// },
 		slidesPerView: 'auto',
 		centeredSlides: true,
 		loop: true,
@@ -125,7 +125,7 @@ $(function () {
 		lineupPlayers.forEach((element) => {
 			element.unload();
 		});
-		lineupPlayers[idx].play();
+		// lineupPlayers[idx].play();
 		$('.nav_wrapper li').eq(idx).addClass('on');
 	});
 
