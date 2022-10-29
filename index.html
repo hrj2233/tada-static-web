@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/layout.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Document</title>
+
+		<script defer src="./js/jquery-3.6.0.min.js"></script>
+		<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script defer src="https://player.vimeo.com/api/player.js"></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+		></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+		></script>
+		<script defer src="./js/main.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="title_wrapper">
+				<h1 class="logo">
+					<a href="">
+						<span class="blind">타다</span>
+					</a>
+				</h1>
+				<div class="line"></div>
+				<button class="hamburger">
+					<span class="blind">메뉴</span>
+					<span class="hamburger_style"></span>
+				</button>
+			</div>
+			<div class="menu_wrapper">
+				<nav>
+					<ul>
+						<li class="intro">
+							<a href="">타다는?</a>
+						</li>
+						<li class="service_lineup">
+							<a href="#lineup">서비스 라인업</a>
+						</li>
+						<li class="howuse">
+							<a href="#howtouse">이용방법</a>
+						</li>
+						<li class="apply">
+							<button class="apply_btn">드라이버 지원</button>
+							<ul id="sub" class="sub">
+								<li class="list">
+									<a href=""
+										>넥스트
+										<span class="sub_text">드라이버 지원</span>
+									</a>
+								</li>
+								<li class="list">
+									<a href=""
+										>플러스
+										<span class="sub_text">드라이버 지원</span>
+									</a>
+								</li>
+								<li class="list">
+									<a href=""
+										>라이트 법인
+										<span class="sub_text">드라이버 지원</span>
+									</a>
+								</li>
+								<li class="list">
+									<a href=""
+										>라이트 개인
+										<span class="sub_text">드라이버 지원</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="help">
+							<a href="">도움말</a>
+						</li>
+						<li class="hamburger_howuse">
+							<a href="">이용방법</a>
+						</li>
+						<li class="recruit">
+							<a href="">VCNC 채용</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="content_wrapper">
+			<section class="video">
+				<div class="title_wrapper">
+					<h2>
+						<span class="title_01">
+							일상 이동의 새로운 기준,<br />
+							타다 NEXT
+						</span>
+						<span class="title_02">
+							이동의 기본, 타다 <br />
+							더 나은 삶을 위한 모빌리티
+						</span>
+					</h2>
+					<div class="btn_wrapper">
+						<button>
+							<img
+								src="./images/button/bt_appdown_2x_pc_ta.png"
+								alt="앱 다운로드"
+							/>
+						</button>
+						<a href="" class="onelink">
+							<img
+								src="./images/button/bt_appdown_2x_mo.png"
+								alt="앱 다운로드"
+								class="mo"
+							/>
+							<img
+								src="./images/button/bt_appdown_2x_pc_ta.png"
+								alt="앱 다운로드"
+								class="ta"
+							/>
+						</a>
+						<div class="link_wrapper">
+							<a href="" class="google">Google Play</a>
+							<a href="" class="app_store">App Store</a>
+						</div>
+					</div>
+				</div>
+				<div class="video_background">
+					<iframe
+						src="https://player.vimeo.com/video/667049748?autoplay=1&loop=1&autopause=0&h=0a154a23f3?api=1&amp;background=true&amp;mute=true&amp;quality=1080p"
+						allow="autoplay"
+					></iframe>
+				</div>
+			</section>
+			<section class="sc_intro intro">
+				<h2>더 나은 이동이 더 나은 삶을 만든다는 믿음</h2>
+				<p>
+					타다는 새로운 이동의 기준을 제시하는 모빌리티 플랫폼입니다. <br />
+					누구든, 언제나 더 나은 이동을 선택할 수 있도록 이동이 필요한 일상에
+					타다가 함께합니다.
+				</p>
+			</section>
+			<section id="lineup" class="lineup">
+				<h2>서비스 라인업</h2>
+				<div>
+					<div class="lineup-slider swiper">
+						<!-- lineup nav -->
+						<div class="nav-scroll-wrapper">
+							<ul class="nav-wrapper">
+								<li class="bullet">
+									<button><span>실시간</span>NEXT</button>
+								</li>
+								<li class="bullet">
+									<button><span>실시간</span>LITE</button>
+								</li>
+								<li class="bullet">
+									<button><span>실시간</span>PLUS</button>
+								</li>
+								<li class="bullet">
+									<button><span>예약</span>AIR</button>
+								</li>
+								<li class="bullet">
+									<button><span>예약</span>PRIVATE</button>
+								</li>
+								<li class="bullet">
+									<button><span>예약</span>GOLF</button>
+								</li>
+							</ul>
+						</div>
+
+						<!-- swiper-wrapper -->
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide next">
+								<div class="video-wrapper">
+									<iframe
+										src="https://player.vimeo.com/video/645095812?api=1&background=1&mute=true&loop=false&autoplay=false"
+									></iframe>
+									<div class="poster"></div>
+								</div>
+								<h3>타다 넥스트</h3>
+								<p>
+									넓고 쾌적한 차량으로 새로운 기준을<br />
+									제시하는 일상 이동
+								</p>
+							</li>
+							<li class="swiper-slide lite">
+								<div class="video-wrapper">
+									<iframe
+										src="https://player.vimeo.com/video/646787889?api=1&amp;background=1&amp;mute=true&amp;loop=false&amp;autoplay=false"
+									></iframe>
+									<div class="poster"></div>
+								</div>
+								<h3>타다 라이트</h3>
+								<p>
+									승차거부 없이 바로배차되는<br />
+									쾌적한 일상 이동 서비스
+								</p>
+							</li>
+							<li class="swiper-slide plus">
+								<div class="video-wrapper">
+									<iframe
+										src="https://player.vimeo.com/video/646787876?api=1&amp;background=1&amp;mute=true&amp;loop=false&amp;autoplay=false"
+									></iframe>
+									<div class="poster"></div>
+								</div>
+								<h3>타다 플러스</h3>
+								<p>
+									베테랑 드라이버가 운행하는<br />
+									준고급 세단의 쾌적한 승차감
+								</p>
+							</li>
+							<li class="swiper-slide air">
+								<div class="video-wrapper">
+									<iframe
+										src="https://player.vimeo.com/video/646787920?api=1&amp;background=1&amp;mute=true&amp;loop=false&amp;autoplay=false"
+									></iframe>
+									<div class="poster"></div>
+								</div>
+								<h3>타다 에어</h3>
+								<p>
+									새벽 비행기, 단체 여행도 걱정 없는<br />
+									공항 이동 예약 서비스
+								</p>
+							</li>
+							<li class="swiper-slide private">
+								<div class="video-wrapper">
+									<iframe
+										src="https://player.vimeo.com/video/646787982?api=1&amp;background=1&amp;mute=true&amp;loop=false&amp;autoplay=false"
+									></iframe>
+									<div class="poster"></div>
+								</div>
+								<h3>타다 프라이빗</h3>
+								<p>
+									결혼식, 가족 여행, 워크숍 등<br />
+									일정에 맞춰 예약하는 시간 대절 서비스
+								</p>
+							</li>
+							<li class="swiper-slide golf">
+								<div class="video-wrapper">
+									<iframe
+										src="https://player.vimeo.com/video/646787956?api=1&amp;background=1&amp;mute=true&amp;loop=false&amp;autoplay=false"
+									></iframe>
+									<div class="poster"></div>
+								</div>
+								<h3>타다 골프</h3>
+								<p>
+									편안한 라운딩을 위한<br />
+									골프장 이동 예약 서비스
+								</p>
+							</li>
+						</ul>
+
+						<!-- next, prev slide button -->
+						<div class="prev slide-btn">
+							<span class="blind">이전</span>
+							<span class="arrow"></span>
+						</div>
+						<div class="next slide-btn">
+							<span class="blind">다음</span>
+							<span class="arrow"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div id="event_bg" class="event_wrapper">
+				<section class="event">
+					<h2 class="blind">이벤트 배너</h2>
+					<div class="slogan_wrapper">
+						<div class="txt_wrap">
+							<span class="blind">슬로건</span>
+						</div>
+					</div>
+					<div class="banner_wrapper">
+						<li class="banner">
+							<h3>
+								<a href="">
+									<span class="title">RECRUIT</span>
+									<span class="sub_title">
+										지금 타다에 탑승하세요 <br />
+										타다 전 직군 채용
+									</span>
+								</a>
+							</h3>
+							<div class="bg"></div>
+							<div class="blur"></div>
+						</li>
+						<li class="banner">
+							<h3>
+								<a href="">
+									<span class="title">INSTAGRAM</span>
+									<span class="sub_title">
+										Follow & Like<br />
+										@official.tada
+									</span>
+								</a>
+							</h3>
+							<div class="bg"></div>
+							<div class="blur"></div>
+						</li>
+						<li class="banner">
+							<h3>
+								<a href="">
+									<span class="title">PROJECT WaaaY</span>
+									<span class="sub_title">
+										일상 속에서 마주하는<br />
+										이동의 다양한 생각과 감상
+									</span>
+								</a>
+							</h3>
+							<div class="bg"></div>
+							<div class="blur"></div>
+						</li>
+					</div>
+				</section>
+				<section class="desc">
+					<div class="bg">
+						<div class="car_bottom"></div>
+						<div class="dim"></div>
+						<div class="car_top"></div>
+					</div>
+					<ul class="vertical_motion">
+						<li class="trigger01">
+							<h3>타다가 이끄는 새로운 이동의 기준</h3>
+						</li>
+						<li class="trigger02">
+							<h3>더 안전하게</h3>
+							<p>
+								정기적인 차내 소독과 전 탑승 보험 적용,<br />
+								실시간 위치 전송으로 안심할 수 있습니다.
+							</p>
+						</li>
+						<li class="trigger03">
+							<h3>더 편안하게</h3>
+							<p>
+								안정적인 주행과 친절한 응대로 <br />
+								편안한 이동 시간을 선사합니다.
+							</p>
+						</li>
+						<li class="trigger04">
+							<h3>더 정직하게</h3>
+							<p>
+								승차거부 없는 바로배차와<br />
+								상호 평가 시스템으로 마음 편히 이동하세요.
+							</p>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<section id="howtouse" class="howtouse">
+				<div class="title_wrapper">
+					<h2>편안한 일상을 위한 모빌리티 앱</h2>
+					<p>앱 하나로 쉽고, 편하게 이동의 기본을 누리세요</p>
+				</div>
+				<div class="slider-content-wrapper">
+					<div class="frame"></div>
+					<div class="swiper howtouse-slider">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="screenshot">
+									<img
+										src="./images/banner/phone/app_slide_image_1_2x_pc.png"
+										alt="타다 앱 로그인 화면"
+									/>
+								</div>
+								<div class="text-wrapper">
+									<h3>가입도 간편하게</h3>
+									<p>
+										휴대폰 번호로 간편하게 가입하고 <br />
+										결제 카드를 등록하세요.
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="screenshot">
+									<img
+										src="./images/banner/phone/app_slide_image_2_2x_pc.png"
+										alt="타다 앱 홈 화면"
+									/>
+								</div>
+								<div class="text-wrapper">
+									<h3>편안한 일상을 위한 모빌리티 앱</h3>
+									<p>
+										차량 호출부터 예약까지<br />
+										혜택과 정보를 한 번에 확인하고<br />
+										더 나은 이동을 시작해 보세요
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="screenshot">
+									<img
+										src="./images/banner/phone/app_slide_image_3_2x_pc.png"
+										alt="타다 앱 호출 화면"
+									/>
+								</div>
+								<div class="text-wrapper">
+									<h3>실시간 예상 금액으로 호출하기</h3>
+									<p>
+										원하는 서비스를 선택하거나,<br />
+										필요할 땐 호출 예약으로<br />
+										여유롭게 이동하세요.
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="screenshot">
+									<img
+										src="./images/banner/phone/app_slide_image_4_2x_pc.png"
+										alt="타다 앱 도착 알림 화면"
+									/>
+								</div>
+								<div class="text-wrapper">
+									<h3>편리한 도착 알림</h3>
+									<p>
+										도착 알림을 확인하고 호출한<br />
+										차량에 탑승하세요.
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="screenshot">
+									<img
+										src="./images/banner/phone/app_slide_image_5_2x_pc.png"
+										alt="타다 앱 실시간 공유 화면"
+									/>
+								</div>
+								<div class="text-wrapper">
+									<h3>내 위치 전송으로 안전하게</h3>
+									<p>
+										이동 중 나의 위치를 확인하고<br />
+										실시간 위치를 공유할 수 있습니다.
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="screenshot">
+									<img
+										src="./images/banner/phone/app_slide_image_6_2x_pc.png"
+										alt="타다 앱 평가 화면"
+									/>
+								</div>
+								<div class="text-wrapper">
+									<h3>정직한 평가 시스템</h3>
+									<p>
+										이동 완료 후 드라이버를 평가할 수<br />
+										있습니다. 이용자 평가 기반으로<br />
+										서비스를 개선합니다.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="bye">
+				<h2>편안한 이동이 필요한 순간 타다와 함께하세요.</h2>
+				<div class="bg"></div>
+			</section>
+		</main>
+		<footer>
+			<div class="driver_area">
+				<h2>타다 드라이버가 되어보세요</h2>
+				<div class="apply_wrapper">
+					<ul>
+						<li>
+							<a href="">타다 넥스트 드라이버 지원하기</a>
+						</li>
+						<li>
+							<a href="">타다 플러스 드라이버 지원하기</a>
+						</li>
+						<li>
+							<a href="">타다 라이트 법인 드라이버 지원하기</a>
+						</li>
+						<li>
+							<a href="">타다 라이트 개인 드라이버 지원하기</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="info_area">
+				<h3>VCNC 브이씨엔씨</h3>
+				<div class="contents">
+					<address class="addr_wrapper">
+						<span> 브이씨엔씨 주식회사 </span>
+						<span> 대표 : 이정행 </span>
+						<span> 통신판매번호 : 2015-서울강남-01065 </span>
+						<span> 사업자등록번호 : 119-86-38202 </span>
+						<span> 주소 : 서울특별시 성동구 왕십리로 83-21 </span>
+						<span> 디타워동 3층 브이씨엔씨 </span>
+					</address>
+					<div class="email_wrapper">
+						<span>
+							<a href="mailto:partner@tadatada.com"
+								>사업제휴문의 : partner@tadatada.com</a
+							>
+						</span>
+						<span>
+							<a href="mailto:marketing@tadatada.com"
+								>마케팅문의 : marketing@tadatada.com</a
+							>
+						</span>
+						<span>
+							<a href="mailto:help@tadatada.com"
+								>고객센터 : help@tadatada.com</a
+							>
+							<a href="tel:1800-8437">1800-8437</a>
+						</span>
+					</div>
+					<div class="link_wrapper">
+						<span>
+							<a href="">개인정보처리방침</a>
+						</span>
+						<span>
+							<a href="">위치기반서비스 이용약관</a>
+						</span>
+						<span>
+							<a href="">이용약관</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="corp_area">
+				<p class="copy">© TADA by Value Creators & Company</p>
+				<ul class="sns_wrapper">
+					<li>
+						<a href="">
+							<span class="blind">인스타그램</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="blind">유튜브</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="blind">페이스북</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="blind">네이버</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
